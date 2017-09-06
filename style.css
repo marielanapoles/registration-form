@@ -1,3 +1,53 @@
 * {
   box-sizing: border-box;
 }
+/*Base Style ==================*/
+.contact_info {
+  border: 0;
+}
+
+.newsletter {
+  border-top: 1px;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+fieldset {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*Layout Styles ===============*/
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.intro, footer {
+  text-align: center;
+}
+
+
+/*flexbox ====================*/
+.content {
+  display: flex;
+}
+
+form,
+fieldset {
+  flex-direction: column;
+}
+
+fieldset {
+  align-self: flex-start;
+}
+
+/*media queries ===============*/
+@media (min-width: 768px) {
+  .container {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+}
